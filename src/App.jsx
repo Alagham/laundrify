@@ -62,3 +62,4 @@ export default function App() {
     </BrowserRouter>
   );
 }
+// making proper routing and proper corrections to the code tomemrrow, waking deep more on my backend structure tomorrow
