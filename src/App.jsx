@@ -30,22 +30,13 @@ export default function App() {
   return (
     <BrowserRouter>
       <Routes>
-        {/* ===== Default ===== */}
         <Route path="/" element={<Navigate to="/customer/home" replace />} />
-
-        {/* ===== Admin ===== */}
         <Route path="/admin/dashboard" element={<AdminDashboard />} />
-
-        {/* ===== Customer ===== */}
         <Route path="/customer/home" element={<CustomerHome />} />
         <Route path="/track/:trackingId" element={<TrackingResult />} />
         <Route path="/track/invalid" element={<InvalidTracking />} />
-
-        {/* ===== Vendor Auth ===== */}
         <Route path="/vendor/register" element={<VendorRegistration />} />
         <Route path="/vendor/login" element={<VendorLogin />} />
-
-        {/* ===== Vendor App ===== */}
         <Route path="/vendor/dashboard" element={<VendorDashboard />} />
         <Route path="/vendor/create-order" element={<CreateOrder />} />
         <Route path="/vendor/orders" element={<Orders />} />
@@ -54,12 +45,8 @@ export default function App() {
         <Route path="/vendor/staff" element={<StaffManagement />} />
         <Route path="/vendor/reports" element={<Reports />} />
         <Route path="/vendor/settings" element={<Settings />} />
-
-
-        {/* ===== 404 ===== */}
         <Route path="*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>
   );
 }
-// making proper routing and proper corrections to the code tomemrrow, waking deep more on my backend structure tomorrow
